@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".GameFragment">
+    tools:context=".GameFragment"
+    android:id="@+id/game">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
