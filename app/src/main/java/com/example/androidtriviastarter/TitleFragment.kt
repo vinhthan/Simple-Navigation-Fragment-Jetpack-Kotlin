@@ -16,13 +16,14 @@ class TitleFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_title, container, false)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
 
-        //trong activity_main thif fragment bat buoc phai co id
+        //trong activity_main thi fragment bat buoc phai co id
         btnPlay.setOnClickListener { view ->
             view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
 
@@ -39,7 +40,8 @@ class TitleFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return NavigationUI.onNavDestinationSelected(item!!,
-            view!!.findNavController()) || super.onOptionsItemSelected(item)
+            view!!.findNavController())
+                || super.onOptionsItemSelected(item)
     }
 
 
